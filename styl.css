@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(IMG_4553.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Hide the video initially */
+#bg-video {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Play button to start video with sound */
+button {
+    font-size: 20px;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4081;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5c8d;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #e91e63;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff4081;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff5c8d;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #e91e63;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #e91e63;
+}
+
+/* Google Font Import for Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
